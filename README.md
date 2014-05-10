@@ -1,4 +1,4 @@
-home
+Home
 ====
 
-A place for configuration files
+A place for configuration files.
