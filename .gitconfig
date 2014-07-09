@@ -1,0 +1,13 @@
+[user]
+	name = David Phuong
+	email = davidphuong20@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[alias]
+    co = checkout
+    br = branch
+    stat = status
+[push]
+	default = matching
+[color]
+	ui = true
