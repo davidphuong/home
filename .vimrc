@@ -17,6 +17,7 @@ Bundle 'xolox/vim-misc'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
 
 " Bundle 'vim-taglist'
 " Bundle 'vim-scripts/AutoTag'
@@ -64,7 +65,7 @@ set spell
 
 " Number of spaces that a <Tab> counts for while performing editing
 " operations, like inserting a <Tab> or using <BS>.
-set softtabstop=4
+set softtabstop=2
 
 " Display long lies as just one line (i.e. you have to scroll horizontally to
 " see the entire line)
@@ -91,8 +92,8 @@ colorscheme solarized
 
 " Tab size and fixes double tab after { [ENTER]
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Status Bar
@@ -230,3 +231,6 @@ let g:session_autoload = 'yes'
 
 let g:syntastic_warning_symbol = 'WW'
 let g:syntastic_error_symbol = 'EE'
+
+" Give a shortcut key to NERD Tree
+map <F2> :NERDTreeToggle<CR>"
