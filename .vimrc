@@ -1,32 +1,17 @@
-set nocompatible " be iMproved, required
-filetype off " required
+set nocompatible
+filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tomtom/tcomment_vim'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'rbong/vim-crystalline'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'kien/ctrlp.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" Color scheme settings
-se t_Co=16
-let g:solarized_termcolors=16
-set background=light
-colorscheme solarized
-
-" Status Bar
-set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]]
-set laststatus=2
+call plug#end()
 
 " Tab = 4 spaces
 set tabstop=4
@@ -111,26 +96,31 @@ noremap <silent> ,mj <C-W>J
 " behavior.
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+" Solarized Plugin
+set background=dark
+autocmd vimenter * ++nested colorscheme solarized8
+
+" Crystalline Plugin
+function! StatusLine(...)
+  return crystalline#mode() . crystalline#right_mode_sep('')
+        \ . ' %f%h%w%m%r ' . crystalline#right_sep('', 'Fill') . '%='
+        \ . crystalline#left_sep('', 'Fill') . ' %{&ft}[%{&fenc!=#""?&fenc:&enc}][%{&ff}] %l/%L %c%V %P '
+endfunction
+let g:crystalline_enable_sep = 1
+let g:crystalline_statusline_fn = 'StatusLine'
+let g:crystalline_theme = 'onedark'
+set laststatus=2
+
+" Session
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
+
+" NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Set local working directory to the directory of the current file
 let g:ctrlp_working_path_mode='ra'
 
-" Syntastic Settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Map ESC to jj
+inoremap jj <esc>
+vnoremap jj <esc>
