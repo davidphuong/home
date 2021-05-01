@@ -10,6 +10,9 @@ Plug 'xolox/vim-misc'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'kien/ctrlp.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -38,7 +41,8 @@ set showmode
 set wildmenu
 
 " Show line numbers
-set number
+" set number
+set relativenumber
 
 " Incrementally match the search
 set incsearch
@@ -48,7 +52,8 @@ set spell
 
 " Display long lies as just one line (i.e. you have to scroll horizontally to
 " see the entire line)
-set nowrap
+" set nowrap
+set wrap
 
 " This shows what you are typing as a command.
 set showcmd
@@ -97,8 +102,11 @@ noremap <silent> ,mj <C-W>J
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Solarized Plugin
+" Color scheme settings
+se t_Co=256
+let g:solarized_termcolors=16
 set background=dark
-autocmd vimenter * ++nested colorscheme solarized8
+colorscheme solarized8_high
 
 " Crystalline Plugin
 function! StatusLine(...)
@@ -117,10 +125,23 @@ let g:session_autoload = 'yes'
 
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
 
 " Set local working directory to the directory of the current file
 let g:ctrlp_working_path_mode='ra'
 
+" Gutentags Plugin
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
+let g:gutentags_project_root = ['Makefile', '.git']
+
+" FSwitch Plugin
+nmap <C-k> :FSHere<CR>
+
+
 " Map ESC to jj
-inoremap jj <esc>
-vnoremap jj <esc>
+inoremap ff <esc>
+vnoremap ff <esc>
