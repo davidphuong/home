@@ -41,8 +41,8 @@ set showmode
 set wildmenu
 
 " Show line numbers
-" set number
 set relativenumber
+set number
 
 " Incrementally match the search
 set incsearch
@@ -140,7 +140,6 @@ let g:gutentags_project_root = ['Makefile', '.git']
 
 " FSwitch Plugin
 nmap <C-k> :FSHere<CR>
-
 
 " Map ESC to jj
 inoremap ff <esc>
