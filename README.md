@@ -1,4 +1,10 @@
-Home
-====
+# Installation
+This has currently only been tested for Ubuntu 20.04.
 
-A place for configuration files.
+## Terminal Settings
+* Colour Scheme
+* Path Customisation
+
+## Vim/NeoVim (what version?)
+* Colour Scheme
+* FZF
