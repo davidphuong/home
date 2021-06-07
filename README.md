@@ -35,6 +35,8 @@ applications on your system. Configure your terminal to use this font.
 // Install Powerlevel10k for Oh My Zsh
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+// Ensure you have copied over .zshrc to ~/
+
 // Restart Zsh and then run the configure command.
 $ p10k configure
 
