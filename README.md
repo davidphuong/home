@@ -42,6 +42,9 @@ $ p10k configure
 
 // Install autojump Zsh plugin
 https://github.com/wting/autojump
+git clone git://github.com/wting/autojump.git $ZSH_CUSTOM/plugins/zsh-autojump
+cd $ZSH_CUSTOM/zsh-autojump
+./install.py
 
 // Install zsh-autosuggestions Zsh plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
