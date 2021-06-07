@@ -59,3 +59,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 # Other Notes
 * cvuorinen's configuration
 * haccks's Config
+
+coc-settings.json = ~/.config/nvim/coc-settings.json
