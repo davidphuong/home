@@ -43,7 +43,7 @@ $ p10k configure
 // Install autojump Zsh plugin
 https://github.com/wting/autojump
 git clone git://github.com/wting/autojump.git $ZSH_CUSTOM/plugins/zsh-autojump
-cd $ZSH_CUSTOM/zsh-autojump
+cd $ZSH_CUSTOM/plugins/zsh-autojump
 ./install.py
 
 // Install zsh-autosuggestions Zsh plugin
@@ -64,5 +64,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 # Other Notes
 * cvuorinen's configuration
 * haccks's Config
+
+sudo apt install neovim
 
 coc-settings.json = ~/.config/nvim/coc-settings.json
