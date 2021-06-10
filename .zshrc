@@ -115,3 +115,5 @@ alias vim="nvim"
 [[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
+# Required by cmake language server
+export PATH=/home/david/.local/bin:$PATH
