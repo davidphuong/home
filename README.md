@@ -66,5 +66,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 * haccks's Config
 
 sudo apt install neovim
+mkdir ~/.config/nvim/
+# Transfer init.vim to ~/.config/nvim/
 
 coc-settings.json = ~/.config/nvim/coc-settings.json
