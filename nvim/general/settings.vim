@@ -1,0 +1,18 @@
+syntax enable
+set relativenumber
+set number
+set hidden
+set cursorline
+set hlsearch
+set incsearch
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set spell
+set showmode
+set wildmenu
+set showcmd
+set updatetime=100
+set shortmess+=c
+set ignorecase
+

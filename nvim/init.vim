@@ -1,0 +1,33 @@
+" General Settings
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/keys/mappings.vim
+" source $HOME/.config/nvim/general/functions.vim
+" source $HOME/.config/nvim/general/paths.vim
+
+" Themes
+source $HOME/.config/nvim/themes/solarized8.vim
+
+" Plugin Configuration
+source ~/.config/nvim/plug-config/vim-session-config.vim
+source ~/.config/nvim/plug-config/vim-airline-config.vim
+source ~/.config/nvim/plug-config/fzf-config.vim
+source ~/.config/nvim/plug-config/vim-sneak-config.vim
+source ~/.config/nvim/plug-config/vim-doge-config.vim
+source ~/.config/nvim/plug-config/vim-fugitive-config.vim
+source ~/.config/nvim/plug-config/vim-fswitch-config.vim
+source ~/.config/nvim/plug-config/scratch-config.vim
+source ~/.config/nvim/plug-config/nvim-treesitter-config.vim
+luafile ~/.config/nvim/lua/plugins/lspkind.lua
+" luafile ~/.config/nvim/lua/plugins/galaxyline-config.lua
+
+luafile ~/.config/nvim/lua/plugins/compe-config.lua
+" LSP: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
+source ~/.config/nvim/plug-config/lsp-config.vim
+luafile ~/.config/nvim/lua/lsp/ccls-ls.lua
+luafile ~/.config/nvim/lua/lsp/python-ls.lua
+luafile ~/.config/nvim/lua/lsp/vim-ls.lua
+" luafile ~/.config/nvim/lua/lua-ls.lua
+" luafile ~/.config/nvim/lua/lsp/bash-ls.lua
+" luafile ~/.config/nvim/lua/lsp/json-ls.lua
+
