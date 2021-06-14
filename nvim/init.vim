@@ -6,7 +6,8 @@ source $HOME/.config/nvim/keys/mappings.vim
 " source $HOME/.config/nvim/general/paths.vim
 
 " Themes
-source $HOME/.config/nvim/themes/solarized8.vim
+" source $HOME/.config/nvim/themes/solarized8.vim
+source $HOME/.config/nvim/themes/miramare.vim
 
 " Plugin Configuration
 source ~/.config/nvim/plug-config/vim-session-config.vim
@@ -19,6 +20,7 @@ source ~/.config/nvim/plug-config/vim-fswitch-config.vim
 source ~/.config/nvim/plug-config/scratch-config.vim
 source ~/.config/nvim/plug-config/nvim-treesitter-config.vim
 luafile ~/.config/nvim/lua/plugins/lspkind.lua
+luafile ~/.config/nvim/lua/plugins/lsp-signature-config.lua
 " luafile ~/.config/nvim/lua/plugins/galaxyline-config.lua
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua

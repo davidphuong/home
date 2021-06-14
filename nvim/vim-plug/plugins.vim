@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Color scheme
     Plug 'lifepillar/vim-solarized8'
+    Plug 'franbach/miramare'
 
     " Syntax Coloring
     Plug 'sheerun/vim-polyglot'
@@ -43,6 +44,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Intellisense
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
+    Plug 'ray-x/lsp_signature.nvim'
     " Plug 'glepnir/lspsaga.nvim'
     " Plug 'onsails/lspkind-nvim'
     " Plug 'kosayoda/nvim-lightbulb'
