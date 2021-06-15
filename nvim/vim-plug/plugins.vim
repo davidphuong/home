@@ -6,8 +6,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+    " Start Screen
+    Plug 'mhinz/vim-startify'
 
-    " Color scheme
+    " Color Scheme
     Plug 'lifepillar/vim-solarized8'
     Plug 'franbach/miramare'
 
@@ -33,7 +35,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     " Have the file system follow you around
-    Plug 'airblade/vim-rooter'
+    " This is now done by Startify
+    " Plug 'airblade/vim-rooter'
 
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
@@ -89,8 +92,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'psliwka/vim-smoothie'
 
     " Vim Sessions
-    Plug 'xolox/vim-session'
-    Plug 'xolox/vim-misc'
+    " Plug 'xolox/vim-session'
+    " Plug 'xolox/vim-misc'
 
     " Git
     Plug 'tpope/vim-fugitive'
@@ -106,5 +109,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Note Taking
     Plug 'mtth/scratch.vim'
 
-call plug#end()
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+    " Hex Coloring
+    Plug 'ap/vim-css-color'
+
+    call plug#end()
 

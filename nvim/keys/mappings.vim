@@ -8,7 +8,6 @@ nmap <leader>q :qa<CR>
 
 " Faster save
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>wa :wa<CR>
 
 " Map gt and gT to next/prev buffers instead of tabs
 nmap gt :bnext<CR>

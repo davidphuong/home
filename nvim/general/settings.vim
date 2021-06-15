@@ -15,4 +15,5 @@ set showcmd
 set updatetime=100
 set shortmess+=c
 set ignorecase
+set scrolloff=999
 

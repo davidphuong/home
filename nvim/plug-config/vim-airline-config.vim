@@ -8,8 +8,10 @@
 "  endfunction
 "  autocmd VimEnter * call AirlineInit()
 
+"  let g:airline_theme='solarized_flood'
+ let g:airline_theme = 'miramare'
+
  " Automatically displays all buffers when there's only one tab open
- let g:airline_theme='solarized_flood'
  let g:airline#extensions#tabline#buffer_nr_show = 1
  let g:airline#extensions#tabline#enabled = 1
 
