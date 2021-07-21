@@ -21,6 +21,7 @@ source $HOME/.config/nvim/plug-config/scratch-config.vim
 source $HOME/.config/nvim/plug-config/nvim-treesitter-config.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen-config.vim
+luafile $HOME/.config/nvim/lua/plugins/diffview-config.lua
 luafile $HOME/.config/nvim/lua/plugins/lspkind.lua
 luafile $HOME/.config/nvim/lua/plugins/lsp-signature-config.lua
 " luafile $HOME/.config/nvim/lua/plugins/galaxyline-config.lua
@@ -28,10 +29,11 @@ luafile $HOME/.config/nvim/lua/plugins/lsp-signature-config.lua
 luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 " LSP: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 source $HOME/.config/nvim/plug-config/lsp-config.vim
+luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
 luafile $HOME/.config/nvim/lua/lsp/ccls-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/python-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/vim-ls.lua
-" luafile $HOME/.config/nvim/lua/lua-ls.lua
+" luafile $HOME/.config/nvim/lua/lsp/lua-ls.lua
 " luafile $HOME/.config/nvim/lua/lsp/bash-ls.lua
 " luafile $HOME/.config/nvim/lua/lsp/json-ls.lua
 

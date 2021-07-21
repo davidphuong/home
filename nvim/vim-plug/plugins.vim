@@ -6,6 +6,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+
+    " ----------------- Accepted --------------------
+
     " Start Screen
     Plug 'mhinz/vim-startify'
 
@@ -17,7 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
 
     " Better Comments
-    Plug 'tomtom/tcomment_vim'
+    Plug 'b3nj5m1n/kommentary'
 
     " Documentation
     Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
@@ -34,53 +37,78 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-surround'
     Plug 'jiangmiao/auto-pairs'
 
-    " Have the file system follow you around
-    " This is now done by Startify
-    " Plug 'airblade/vim-rooter'
-
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
 
-    " Telescope
-    " Plug 'nvim-telescope/telescope.nvim'
-
-    " Intellisense
+    " LSP
     Plug 'neovim/nvim-lspconfig'
+    Plug 'kabouzeid/nvim-lspinstall'
     Plug 'hrsh7th/nvim-compe'
     Plug 'ray-x/lsp_signature.nvim'
+
+    " Cool Icons
+    Plug 'onsails/lspkind-nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'ryanoasis/vim-devicons'
+
+    " Indentation Guide
+    Plug 'lukas-reineke/indent-blankline.nvim'
+
+    " Status Line
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+
+    " Interactive Code
+    Plug 'metakirby5/codi.vim'
+
+    " Smooth Scroll
+    Plug 'psliwka/vim-smoothie'
+
+    " Git
+    Plug 'tpope/vim-fugitive'
+    Plug 'junegunn/gv.vim'
+    Plug 'sindrets/diffview.nvim'
+
+    " Fuzzy Finder
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
+    " --------------- End Accepted ------------------
+
+
     " Plug 'glepnir/lspsaga.nvim'
     " Plug 'onsails/lspkind-nvim'
     " Plug 'kosayoda/nvim-lightbulb'
     " Plug 'mfussenegger/nvim-jdtls'
     " Plug 'mfussenegger/nvim-dap'
 
+
+
+
+
+
+
+
+
+
+    " Telescope
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+
+
     " File Explorer
     " Plug 'kyazdani42/nvim-tree.lua'
 
     " Auto pairs for '(' '[' '{'
 
-    " Cool Icons
-    Plug 'onsails/lspkind-nvim'
-    Plug 'kyazdani42/nvim-web-devicons'
-    " Plug 'ryanoasis/vim-devicons'
 
-    " Indentation Guide
-    Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
 
-    " Status Line
-    " Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
 
     " Snippets
     " Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
 
-    " Interactive Code
-    " Plug 'metakirby5/codi.vim'
-
-    " Ranger
-    " Plug 'kevinhwang91/rnvimr'
 
     " Better Tabline
     " Plug 'romgrk/barbar.nvim'
@@ -88,20 +116,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Find and replace
     " Plug 'brooth/far.vim'
 
-    " Smooth Scroll
-    Plug 'psliwka/vim-smoothie'
 
-    " Vim Sessions
-    " Plug 'xolox/vim-session'
-    " Plug 'xolox/vim-misc'
 
-    " Git
-    Plug 'tpope/vim-fugitive'
-    Plug 'junegunn/gv.vim'
-
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
 
     " Switch between .h and .cpp
     Plug 'derekwyatt/vim-fswitch'
@@ -114,6 +130,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Hex Coloring
     Plug 'ap/vim-css-color'
+
+    " Vim Key Information
+    Plug 'liuchengxu/vim-which-key'
 
     call plug#end()
 
