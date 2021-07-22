@@ -10,9 +10,8 @@ source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/themes/miramare.vim
 
 " Plugin Configuration
-" source $HOME/.config/nvim/plug-config/vim-session-config.vim
 source $HOME/.config/nvim/plug-config/vim-airline-config.vim
-source $HOME/.config/nvim/plug-config/fzf-config.vim
+" source $HOME/.config/nvim/plug-config/fzf-config.vim
 source $HOME/.config/nvim/plug-config/vim-sneak-config.vim
 source $HOME/.config/nvim/plug-config/vim-doge-config.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive-config.vim
@@ -21,6 +20,7 @@ source $HOME/.config/nvim/plug-config/scratch-config.vim
 source $HOME/.config/nvim/plug-config/nvim-treesitter-config.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen-config.vim
+luafile $HOME/.config/nvim/lua/plugins/telescope-config.lua
 luafile $HOME/.config/nvim/lua/plugins/diffview-config.lua
 luafile $HOME/.config/nvim/lua/plugins/lspkind.lua
 luafile $HOME/.config/nvim/lua/plugins/lsp-signature-config.lua

@@ -69,55 +69,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     Plug 'sindrets/diffview.nvim'
 
-    " Fuzzy Finder
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-
-    " --------------- End Accepted ------------------
-
-
-    " Plug 'glepnir/lspsaga.nvim'
-    " Plug 'onsails/lspkind-nvim'
-    " Plug 'kosayoda/nvim-lightbulb'
-    " Plug 'mfussenegger/nvim-jdtls'
-    " Plug 'mfussenegger/nvim-dap'
-
-
-
-
-
-
-
-
-
-
     " Telescope
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
 
+    " Telescope Extension
+    Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-    " File Explorer
-    " Plug 'kyazdani42/nvim-tree.lua'
-
-    " Auto pairs for '(' '[' '{'
-
-
-
-
-    " Snippets
-    " Plug 'honza/vim-snippets'
-    " Plug 'mattn/emmet-vim'
-
-
-    " Better Tabline
-    " Plug 'romgrk/barbar.nvim'
-
-    " Find and replace
-    " Plug 'brooth/far.vim'
-
-
-
+    " Quickfix Window
+    Plug 'kevinhwang91/nvim-bqf'
 
     " Switch between .h and .cpp
     Plug 'derekwyatt/vim-fswitch'
@@ -130,6 +91,32 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Hex Coloring
     Plug 'ap/vim-css-color'
+
+    " --------------- End Accepted ------------------
+
+
+    " Plug 'glepnir/lspsaga.nvim'
+    " Plug 'onsails/lspkind-nvim'
+    " Plug 'kosayoda/nvim-lightbulb'
+    " Plug 'mfussenegger/nvim-jdtls'
+    " Plug 'mfussenegger/nvim-dap'
+
+    " Fuzzy Finder
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
+
+    " File Explorer
+    " Plug 'kyazdani42/nvim-tree.lua'
+
+    " Snippets
+    " Plug 'honza/vim-snippets'
+    " Plug 'mattn/emmet-vim'
+
+    " Better Tabline
+    " Plug 'romgrk/barbar.nvim'
+
+    " Find and replace
+    " Plug 'brooth/far.vim'
 
     " Vim Key Information
     Plug 'liuchengxu/vim-which-key'
