@@ -109,12 +109,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [[ command -v nvim ]]; then
+if command -v nvim; then
     alias vim="nvim"
 fi
 
-if [[ command -v python ]]; then
-    alias vim="python3"
+if ! command -v python; then
+    alias python="python3"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
