@@ -113,6 +113,10 @@ if [[ command -v nvim ]]; then
     alias vim="nvim"
 fi
 
+if [[ command -v python ]]; then
+    alias vim="python3"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
