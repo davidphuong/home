@@ -28,9 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Text Navigation
     Plug 'justinmk/vim-sneak'
 
-    " Tags
-    Plug 'ludovicchabant/vim-gutentags'
-
     " Text Modification
     " Inserting newline without going into Insert Mode (]<Space> and [<Space>)
     Plug 'tpope/vim-unimpaired'
@@ -66,6 +63,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Git
     Plug 'tpope/vim-fugitive'
+    Plug 'lewis6991/gitsigns.nvim'
     Plug 'junegunn/gv.vim'
     Plug 'sindrets/diffview.nvim'
 
@@ -120,6 +118,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Vim Key Information
     Plug 'liuchengxu/vim-which-key'
+
+    " Tags
+    " Plug 'ludovicchabant/vim-gutentags'
 
     call plug#end()
 

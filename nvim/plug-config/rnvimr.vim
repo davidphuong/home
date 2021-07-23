@@ -1,3 +1,4 @@
+" pip3 install ranger-fm pynvim
 " sudo apt install ranger
 " git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 " mkdir ~/.config/ranger

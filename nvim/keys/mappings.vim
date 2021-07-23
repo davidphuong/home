@@ -13,8 +13,10 @@ nnoremap <Leader>w :w<CR>
 nmap gt :bnext<CR>
 nmap gT :bprev<CR>
 
-" Map <Leader> x to close current buffer
-" Use this a lot
+" Close current window
+nmap <leader>c :close<CR>
+
+" Close current buffer
 nmap <leader>x :bd<CR>
 
 " Select what was just pasted
@@ -45,4 +47,8 @@ noremap <silent> ,mk <C-W>K
 noremap <silent> ,mh <C-W>H
 " Move the current window to the bottom of the main Vim window
 noremap <silent> ,mj <C-W>J
+
+" This shortcut will list the available buffers and prepare :b for you
+" Then you can just type the buffer number, and hit Enter
+nnoremap <Leader>b :ls<CR>:b<Space>
 
