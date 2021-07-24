@@ -15,6 +15,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color Scheme
     Plug 'lifepillar/vim-solarized8'
     Plug 'franbach/miramare'
+    Plug 'npxbr/gruvbox.nvim'
+    Plug 'rktjmp/lush.nvim'
 
     " Syntax Coloring
     Plug 'sheerun/vim-polyglot'
@@ -52,8 +54,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lukas-reineke/indent-blankline.nvim'
 
     " Status Line
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    " Plug 'vim-airline/vim-airline'
+    " Plug 'vim-airline/vim-airline-themes'
+    Plug 'glepnir/galaxyline.nvim'
+    Plug 'akinsho/nvim-bufferline.lua'
 
     " Interactive Code
     Plug 'metakirby5/codi.vim'
@@ -90,6 +94,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Hex Coloring
     Plug 'ap/vim-css-color'
 
+    " Maintain Window Layout
+    Plug 'moll/vim-bbye'
+    
     " --------------- End Accepted ------------------
 
 
@@ -98,10 +105,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'kosayoda/nvim-lightbulb'
     " Plug 'mfussenegger/nvim-jdtls'
     " Plug 'mfussenegger/nvim-dap'
-
-    " Fuzzy Finder
-    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    " Plug 'junegunn/fzf.vim'
 
     " File Explorer
     " Plug 'kyazdani42/nvim-tree.lua'
@@ -122,5 +125,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Tags
     " Plug 'ludovicchabant/vim-gutentags'
 
-    call plug#end()
+call plug#end()
 
