@@ -74,7 +74,7 @@ gls.left[6] = {
     DiffAdd = {
         provider = "DiffAdd",
         condition = checkwidth,
-        icon = "  ",
+        icon = "  ",
         highlight = {colors.white, colors.statusline_bg}
     }
 }
@@ -83,8 +83,10 @@ gls.left[7] = {
     DiffModified = {
         provider = "DiffModified",
         condition = checkwidth,
-        icon = "   ",
-        highlight = {colors.grey_fg2, colors.statusline_bg}
+        icon = " 柳 ",
+        -- highlight = {colors.grey_fg2, colors.statusline_bg}
+        -- highlight = {colors.grey_fg2, colors.statusline_bg}
+        highlight = { colors.blue, colors.statusline_bg },
     }
 }
 
@@ -92,15 +94,15 @@ gls.left[8] = {
     DiffRemove = {
         provider = "DiffRemove",
         condition = checkwidth,
-        icon = "  ",
-        highlight = {colors.grey_fg2, colors.statusline_bg}
+        icon = "  ",
+        highlight = {colors.red, colors.statusline_bg}
     }
 }
 
 gls.left[9] = {
     DiagnosticError = {
         provider = "DiagnosticError",
-        icon = "  ",
+        icon = "  ",
         highlight = {colors.red, colors.statusline_bg}
     }
 }
@@ -108,7 +110,7 @@ gls.left[9] = {
 gls.left[10] = {
     DiagnosticWarn = {
         provider = "DiagnosticWarn",
-        icon = "  ",
+        icon = "  ",
         highlight = {colors.yellow, colors.statusline_bg}
     }
 }
