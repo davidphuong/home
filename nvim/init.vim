@@ -5,6 +5,7 @@ source $HOME/.config/nvim/keys/mappings.vim
 " source $HOME/.config/nvim/general/functions.vim
 " source $HOME/.config/nvim/general/paths.vim
 
+
 " Plugin Configuration
 " source $HOME/.config/nvim/plug-config/vim-airline-config.vim
 " source $HOME/.config/nvim/plug-config/fzf-config.vim
@@ -28,7 +29,7 @@ luafile $HOME/.config/nvim/lua/plugins/galaxyline-config.lua
 
 luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 " LSP: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
-source $HOME/.config/nvim/plug-config/lsp-config.vim
+" source $HOME/.config/nvim/plug-config/lsp-config.vim
 luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
 luafile $HOME/.config/nvim/lua/lsp/ccls-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/python-ls.lua

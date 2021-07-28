@@ -9,10 +9,6 @@ nmap <leader>q :qa<CR>
 " Faster save
 nnoremap <Leader>w :w<CR>
 
-" Map gt and gT to next/prev buffers instead of tabs
-nmap gt :bnext<CR>
-nmap gT :bprev<CR>
-
 " Close current window
 nmap <leader>c :close<CR>
 
@@ -51,9 +47,6 @@ noremap <silent> ,mj <C-W>J
 " This shortcut will list the available buffers and prepare :b for you
 " Then you can just type the buffer number, and hit Enter
 nnoremap <Leader>b :ls<CR>:b<Space>
-
-
-
 
 " These commands will navigate through buffers in order regardless of which mode you are using
 " e.g. if you change the order of buffers :bnext and :bprevious will not respect the custom ordering
