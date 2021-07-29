@@ -1,3 +1,5 @@
+-- sudo apt install ripgrep
+
 local actions = require "telescope.actions"
 
 require('telescope').setup{
