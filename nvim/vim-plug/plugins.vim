@@ -17,9 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'franbach/miramare'
     Plug 'npxbr/gruvbox.nvim'
     Plug 'rktjmp/lush.nvim'
-
-    " Syntax Coloring
-    Plug 'sheerun/vim-polyglot'
+    Plug 'shaunsingh/nord.nvim'
 
     " Better Comments
     Plug 'b3nj5m1n/kommentary'
@@ -27,14 +25,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Documentation
     Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
+    " Cursor
+    Plug 'yamatsum/nvim-cursorline'
+
     " Text Navigation
     Plug 'justinmk/vim-sneak'
 
     " Text Modification
-    " Inserting newline without going into Insert Mode (]<Space> and [<Space>)
-    Plug 'tpope/vim-unimpaired'
+    Plug 'tpope/vim-unimpaired' " Inserting newline without going into Insert Mode (]<Space> and [<Space>)
     Plug 'tpope/vim-surround'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'brooth/far.vim'
 
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
@@ -96,6 +97,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Maintain Window Layout
     Plug 'moll/vim-bbye'
+
+    " Vim Key Information
+    Plug 'folke/which-key.nvim'
     
     " --------------- End Accepted ------------------
 
@@ -113,14 +117,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
 
-    " Better Tabline
-    " Plug 'romgrk/barbar.nvim'
-
     " Find and replace
     " Plug 'brooth/far.vim'
 
-    " Vim Key Information
-    Plug 'liuchengxu/vim-which-key'
 
     " Tags
     " Plug 'ludovicchabant/vim-gutentags'

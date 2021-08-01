@@ -9,11 +9,45 @@ nmap <leader>q :qa<CR>
 " Faster save
 nnoremap <Leader>w :w<CR>
 
+" Behave vim
+nnoremap Y y$
+
+" Don't yank deleted lines when pasting
+vnoremap p "0p
+vnoremap P "0P
+vnoremap y "0y
+vnoremap d "0d
+
+" Every character specified below is added as an action to the undo redo tree
+" This will allow a more refiner undo action
+inoremap <space> <space><c-g>u
+inoremap , ,<c-g>u
+inoremap [ [<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap ( (<c-g>u
+inoremap ) )<c-g>u
+inoremap { {<c-g>u
+inoremap } }<c-g>u
+
+" Jumplist mutations
+" Relative jumps are now added to the jump list history if large enough
+nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
+nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
+
+" Moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <Leader>k :m .-2<CR>==
+nnoremap <Leader>j :m .+1<CR>==
+
 " Close current window
-nmap <leader>c :close<CR>
+nmap <Leader>c :close<CR>
 
 " Close current buffer
-nmap <leader>x :Bdelete<CR>
+nmap <Leader>x :Bdelete<CR>
 
 " Select what was just pasted
 nnoremap <Leader>V V`]
