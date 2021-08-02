@@ -18,6 +18,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'npxbr/gruvbox.nvim'
     Plug 'rktjmp/lush.nvim'
     Plug 'shaunsingh/nord.nvim'
+    Plug 'sainnhe/sonokai'
+
+    " Text Color
+    Plug 'folke/todo-comments.nvim'
 
     " Better Comments
     Plug 'b3nj5m1n/kommentary'
@@ -105,7 +109,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
     " Plug 'glepnir/lspsaga.nvim'
-    " Plug 'onsails/lspkind-nvim'
     " Plug 'kosayoda/nvim-lightbulb'
     " Plug 'mfussenegger/nvim-jdtls'
     " Plug 'mfussenegger/nvim-dap'
@@ -116,10 +119,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets
     " Plug 'honza/vim-snippets'
     " Plug 'mattn/emmet-vim'
-
-    " Find and replace
-    " Plug 'brooth/far.vim'
-
 
     " Tags
     " Plug 'ludovicchabant/vim-gutentags'
