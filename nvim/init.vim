@@ -26,6 +26,7 @@ luafile $HOME/.config/nvim/lua/plugins/galaxyline-config.lua
 luafile $HOME/.config/nvim/lua/plugins/nvim-treesitter.lua
 luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 luafile $HOME/.config/nvim/lua/plugins/todo-comments.lua
+luafile $HOME/.config/nvim/lua/plugins/which-key.lua
 
 luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
 luafile $HOME/.config/nvim/lua/lsp/ccls-ls.lua
