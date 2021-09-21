@@ -1,3 +1,9 @@
+" Install Instructions
+" :PlugInstall
+" Follow install instructions in nvim/plug-config/rnvimr.vim
+" :LspInstall {insert language here}
+" sudo apt install ripgrep
+
 " General Settings
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
