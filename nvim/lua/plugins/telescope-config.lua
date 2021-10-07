@@ -27,6 +27,7 @@ require('telescope').setup{
       vertical = {
         mirror = false,
       },
+      preview_width = 0.5,
     },
     file_sorter =  require'telescope.sorters'.get_fuzzy_file,
     file_ignore_patterns = { 'tags' },
@@ -36,7 +37,7 @@ require('telescope').setup{
     borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
     color_devicons = true,
     use_less = true,
-    path_display = {},
+    path_display = { shorten = 6 },
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,

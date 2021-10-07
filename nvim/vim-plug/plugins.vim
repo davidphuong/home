@@ -74,7 +74,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'junegunn/gv.vim'
-    Plug 'sindrets/diffview.nvim'
+    " Plug 'sindrets/diffview.nvim'
 
     " Telescope
     Plug 'nvim-lua/popup.nvim'

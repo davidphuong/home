@@ -23,7 +23,7 @@ source $HOME/.config/nvim/plug-config/start-screen-config.vim
 
 luafile $HOME/.config/nvim/lua/plugins/telescope-config.lua
 luafile $HOME/.config/nvim/lua/plugins/kommentary.lua
-luafile $HOME/.config/nvim/lua/plugins/diffview-config.lua
+" luafile $HOME/.config/nvim/lua/plugins/diffview-config.lua
 luafile $HOME/.config/nvim/lua/plugins/gitsigns.lua
 luafile $HOME/.config/nvim/lua/plugins/lspkind.lua
 luafile $HOME/.config/nvim/lua/plugins/lsp-signature-config.lua
