@@ -2,6 +2,7 @@
 " :PlugInstall
 " Follow install instructions in nvim/plug-config/rnvimr.vim
 " :LspInstall {insert language here}
+" sudo apt install ccls
 " sudo apt install ripgrep
 
 " General Settings
