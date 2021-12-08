@@ -13,15 +13,15 @@ source $HOME/.config/nvim/plug-config/sonokai.vim
 " source $HOME/.config/nvim/general/functions.vim
 " source $HOME/.config/nvim/general/paths.vim
 
-" Plugin Configuration
+" Plugin Configuration (.vim)
 source $HOME/.config/nvim/plug-config/vim-sneak-config.vim
 source $HOME/.config/nvim/plug-config/vim-doge-config.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive-config.vim
 source $HOME/.config/nvim/plug-config/vim-fswitch-config.vim
-source $HOME/.config/nvim/plug-config/scratch-config.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen-config.vim
 
+" Plugin Configuration (.lua)
 luafile $HOME/.config/nvim/lua/plugins/telescope-config.lua
 luafile $HOME/.config/nvim/lua/plugins/kommentary.lua
 " luafile $HOME/.config/nvim/lua/plugins/diffview-config.lua
@@ -34,6 +34,7 @@ luafile $HOME/.config/nvim/lua/plugins/nvim-treesitter.lua
 luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 luafile $HOME/.config/nvim/lua/plugins/todo-comments.lua
 luafile $HOME/.config/nvim/lua/plugins/which-key.lua
+luafile $HOME/.config/nvim/lua/plugins/nvim-searchbox.lua
 
 luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
 luafile $HOME/.config/nvim/lua/lsp/ccls-ls.lua

@@ -41,6 +41,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     Plug 'brooth/far.vim'
 
+    Plug 'MunifTanjim/nui.nvim'
+    Plug 'VonHeikemen/searchbox.nvim'
+
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
 
@@ -89,9 +92,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Switch between .h and .cpp
     Plug 'derekwyatt/vim-fswitch'
-
-    " Note Taking
-    Plug 'mtth/scratch.vim'
 
     " Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
