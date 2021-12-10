@@ -85,6 +85,8 @@ require('telescope').setup{
 require('telescope').load_extension('fzf')
 
 -- Keybindings
+vim.api.nvim_set_keymap("n", "<leader>f<space>", "<cmd>Telescope resume<cr>", {noremap = true, silent = true})
+
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>1ff", "<cmd>Telescope find_files cwd=../<cr>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>2ff", "<cmd>Telescope find_files cwd=../../<cr>", {noremap = true, silent = true})
