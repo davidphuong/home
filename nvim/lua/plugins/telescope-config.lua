@@ -21,13 +21,9 @@ require('telescope').setup{
     sorting_strategy = "descending",
     layout_strategy = "horizontal",
     layout_config = {
-      horizontal = {
-        mirror = false,
-      },
       vertical = {
-        mirror = false,
+        width = 0.85,
       },
-      preview_width = 0.5,
     },
     file_sorter =  require'telescope.sorters'.get_fuzzy_file,
     file_ignore_patterns = { 'tags' },
