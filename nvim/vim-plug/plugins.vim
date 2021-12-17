@@ -33,7 +33,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yamatsum/nvim-cursorline'
 
     " Text Navigation
-    Plug 'justinmk/vim-sneak'
+    " Plug 'justinmk/vim-sneak'
+    Plug 'ggandor/lightspeed.nvim'
+    Plug 'chentau/marks.nvim'
 
     " Text Modification
     Plug 'tpope/vim-unimpaired' " Inserting newline without going into Insert Mode (]<Space> and [<Space>)
@@ -51,6 +53,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'kabouzeid/nvim-lspinstall'
     Plug 'hrsh7th/nvim-compe'
+    " Plug 'hrsh7th/nvim-cmp'
+    " Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'ray-x/lsp_signature.nvim'
 
     " Cool Icons
@@ -104,7 +108,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Vim Key Information
     Plug 'folke/which-key.nvim'
-    
+
+    " Register
+    " Plug 'AckslD/nvim-neoclip.lua'
+
+    " Snippets
+    " Plug 'L3MON4D3/LuaSnip' 
+    " Plug 'saadparwaiz1/cmp_luasnip'
+    " Plug 'rafamadriz/friendly-snippets'
+    " Plug 'hrsh7th/vim-vsnip' 
+
     " --------------- End Accepted ------------------
 
 
@@ -116,9 +129,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " File Explorer
     " Plug 'kyazdani42/nvim-tree.lua'
 
-    " Snippets
-    " Plug 'honza/vim-snippets'
-    " Plug 'mattn/emmet-vim'
 
     " Tags
     " Plug 'ludovicchabant/vim-gutentags'

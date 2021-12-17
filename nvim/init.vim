@@ -14,7 +14,7 @@ source $HOME/.config/nvim/plug-config/sonokai.vim
 " source $HOME/.config/nvim/general/paths.vim
 
 " Plugin Configuration (.vim)
-source $HOME/.config/nvim/plug-config/vim-sneak-config.vim
+" source $HOME/.config/nvim/plug-config/vim-sneak-config.vim
 source $HOME/.config/nvim/plug-config/vim-doge-config.vim
 source $HOME/.config/nvim/plug-config/vim-fugitive-config.vim
 source $HOME/.config/nvim/plug-config/vim-fswitch-config.vim
@@ -35,6 +35,14 @@ luafile $HOME/.config/nvim/lua/plugins/compe-config.lua
 luafile $HOME/.config/nvim/lua/plugins/todo-comments.lua
 luafile $HOME/.config/nvim/lua/plugins/which-key.lua
 luafile $HOME/.config/nvim/lua/plugins/nvim-searchbox.lua
+luafile $HOME/.config/nvim/lua/plugins/nvim-lightspeed.lua
+luafile $HOME/.config/nvim/lua/plugins/nvim-marks.lua
+" luafile $HOME/.config/nvim/lua/plugins/nvim-neoclip.lua
+" luafile $HOME/.config/nvim/lua/plugins/nvim-cmp.lua
+" luafile $HOME/.config/nvim/lua/plugins/cmp-nvim-lsp.lua
+" luafile $HOME/.config/nvim/lua/plugins/nvim-luasnip.lua
+" luafile $HOME/.config/nvim/lua/plugins/nvim-cmp-luasnip.lua
+" luafile $HOME/.config/nvim/lua/plugins/friendly-snippets.lua
 
 luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
 luafile $HOME/.config/nvim/lua/lsp/ccls-ls.lua

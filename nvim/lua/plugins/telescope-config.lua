@@ -19,15 +19,11 @@ require('telescope').setup{
     initial_mode = "insert",
     selection_strategy = "reset",
     sorting_strategy = "descending",
-    layout_strategy = "horizontal",
+    layout_strategy = "vertical",
     layout_config = {
-      horizontal = {
-        mirror = false,
-      },
       vertical = {
-        mirror = false,
+        width = 0.85,
       },
-      preview_width = 0.5,
     },
     file_sorter =  require'telescope.sorters'.get_fuzzy_file,
     file_ignore_patterns = { 'tags' },
@@ -85,6 +81,8 @@ require('telescope').setup{
 require('telescope').load_extension('fzf')
 
 -- Keybindings
+vim.api.nvim_set_keymap("n", "<leader>f<space>", "<cmd>Telescope resume<cr>", {noremap = true, silent = true})
+
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>1ff", "<cmd>Telescope find_files cwd=../<cr>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>2ff", "<cmd>Telescope find_files cwd=../../<cr>", {noremap = true, silent = true})
@@ -104,4 +102,6 @@ vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", {norema
 vim.api.nvim_set_keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap("n", "<leader>fy", "<cmd>Telescope neoclip<cr>", {noremap = true, silent = true})
 
